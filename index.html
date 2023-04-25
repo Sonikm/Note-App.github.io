@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://kit.fontawesome.com/f5c8e13b2d.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- || LEFT SHIDEBAR -->
+        <div class="left-container active">
+
+            <ul class="created-notes">
+                <li class="notes-list modification-menu"> 
+                    <h1>Notes</h1>
+                    <div class="update-delete_menu">
+                        <button class="update"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button class="delete"><i class="uil uil-trash"></i></button>
+                    </div>
+                </li>
+
+                <li class="notes-list" onclick="showMenu(this)"> 
+           
+                    <h3 class="notes-list__heading">Your heading 😀</h3>
+                    <p class="notes-list__content">Write your first note 📝.</p>
+                    <p class="notes-list__date" id="current-date">April 22, 2023</p>
+                    <div class="selected-note">
+                        <div class="icon"><i class="fa-solid fa-square-check"></i></div>   
+                    </div>
+              </li>
+
+            </ul>
+
+            <div class="add-note active">
+                <div class="add-note_icon"><i class="fa-solid fa-plus"></i></div>
+            </div>
+
+        </div>
+
+        <!-- || RIGHT CONTAINER -->
+        <div class="right-container active">
+            <div class="add-note__box">
+                <input type="text" class="title" spellcheck="false" placeholder="Title">
+                <div class="date"><i class="fa-solid fa-calendar-days"></i> April 22, 2023</div>
+                <textarea class="note-desc" placeholder="Start typing . . ." spellcheck="false"></textarea>
+            </div>
+
+            <div class="settings">
+                <div class="saveUpdateIcon"><i class="fa-solid fa-pen-to-square"></i></button></div>
+                <button class="save"><i class="fa-solid fa-check"></i></button>
+                <button class="close-icon"><i class="fa-solid fa-xmark"></i></button>
+
+            </div>
+
+            <!-- || IMAGE SHOWING OPTIONS -->
+            <ul class="change-color">
+                <li class="color" id="purple"></li>
+                <li class="color" id="green"></li>
+                <li class="color" id="red"></li>
+                <li class="color" id="amber"></li>
+                <li class="color" id="blue"></li>
+                <li class="color" id="gray"></li>
+                <li class="color" id="teal"></li>
+                <li class="color" id="dark-blue"></li>
+                <li class="color" id="orange"></li>
+                <li class="color" id="pink"></li>
+            </ul>
+        </div>
+
+    </div>
+
+<script src="main.js"></script>
+</body>
+
+</html>
