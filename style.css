@@ -162,6 +162,7 @@ li {
     width: 60px;
     cursor: pointer;
     transition: scale 0.4s ease;
+    opacity: 0;
 }
 
 .add-note .add-note_icon {
@@ -580,6 +581,10 @@ body.orange, .left-container .created-notes .notes-list.orange {
       right: 40px;
       transition: all 0.2s linear;
 
+    }
+
+    .left-container .add-note {
+        opacity: 1;
     }
 
 }
